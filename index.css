@@ -5,6 +5,15 @@
 #navbar {
   background-color: #a91d3a !important;
 }
+.navbar-brand {
+  font-weight: 900;
+  font-size: 24px;
+  font-style: normal;
+  letter-spacing: 8px;
+}
+.navbar-brand:hover {
+  color: #151515 !important;
+}
 #links a {
   color: #ffffff;
 }
@@ -27,13 +36,53 @@
 }
 #landing-text {
   font-size: 24px;
+  color: #ffffff;
+  text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.9);
+}
+#landing-col {
+  height: 60vh;
+}
+/* Flip Card Animation */
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
   color: #151515;
-  text-shadow: 0px 0px 9px rgba(238, 238, 238, 0.6);
 }
-.card {
-  background-color: #eeeeee !important;
-  border: 2px solid #151515 !important;
+
+.flip-card-back {
+  background-color: #c73659;
+  color: white;
+  transform: rotateY(180deg);
 }
+/* Flip Card Animation End*/
+
 #tools {
   background-color: #a91d3a;
 }
@@ -89,4 +138,21 @@
   font-weight: 800;
   line-height: 24px;
   color: #ffffff;
+}
+
+.row {
+  animation: RevealOnScroll ease-in-out both;
+  animation-timeline: view();
+  animation-range: entry 50% cover 50%;
+}
+
+@keyframes RevealOnScroll {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
