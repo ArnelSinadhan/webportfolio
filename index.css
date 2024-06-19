@@ -1,0 +1,92 @@
+* {
+  font-family: "Kanit", sans-serif;
+}
+
+#navbar {
+  background-color: #a91d3a !important;
+}
+#links a {
+  color: #ffffff;
+}
+#links a:hover {
+  color: #151515;
+  text-shadow: 0px -1px 12px rgba(255, 255, 255, 0.77);
+}
+#landing {
+  background-color: #a91d3a;
+}
+#landing-title {
+  font-weight: 700;
+  font-size: 68px;
+  color: #ffffff;
+  letter-spacing: 5px;
+}
+#landing-subtitle {
+  font-weight: 600px;
+  color: #ffffff;
+}
+#landing-text {
+  font-size: 24px;
+  color: #151515;
+  text-shadow: 0px 0px 9px rgba(238, 238, 238, 0.6);
+}
+.card {
+  background-color: #eeeeee !important;
+  border: 2px solid #151515 !important;
+}
+#tools {
+  background-color: #a91d3a;
+}
+#tools-header {
+  color: #ffffff;
+}
+#tools-subheader {
+  color: #ffffff;
+}
+#tools-img {
+  height: 80px;
+}
+#footer {
+  background-color: #a91d3a;
+  color: #ffffff;
+}
+#contact-header {
+  color: #a91d3a;
+}
+#contact form label {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24.38px;
+  color: #151515;
+}
+
+#contact form input {
+  border: 1px solid #a91d3a !important;
+  border-radius: 0 !important;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29.26px;
+}
+
+#contact form input::placeholder {
+  color: #c73659 !important;
+}
+
+#contact form textarea {
+  background-color: #ffffff;
+  border: 1px solid #a91d3a !important;
+  border-radius: 0 !important;
+}
+
+#form-btn {
+  padding: 8px 24px 8px 24px;
+  gap: 8px;
+  border-radius: 2px;
+  background-color: #a91d3a;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  color: #ffffff;
+}
